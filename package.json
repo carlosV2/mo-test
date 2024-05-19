@@ -1,0 +1,17 @@
+{
+  "name": "mo-test",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "app": "node index.js",
+    "db": "docker run -it --name mo_test --rm -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=postgres -e TZ=GMT -e PGTZ=GMT -p 5432:5432 postgres:14"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@mikro-orm/core": "^6.2.7",
+    "@mikro-orm/postgresql": "^6.2.7"
+  }
+}
